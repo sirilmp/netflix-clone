@@ -1,0 +1,152 @@
+.plan .plan_body {
+  width: 100%;
+  margin: 70px 0px;
+}
+.plan .plan_body .plan_contents .steps {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.plan .plan_body .info_texts{
+  margin-top: 30px;
+  max-width: 900px;
+  }
+.plan .plan_body .plan_contents .info_text{
+font-size: 13px;
+font-weight: 400;
+color: #7e7e7e;
+margin-top: 15px;
+}
+.plan .plan_body .plan_contents .steps > span {
+  font-weight: 600;
+  margin: 0 2px;
+}
+.plan .plan_body .plan_contents .heading {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.plan .plan_body .plans .plans_item {
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px 1px #00000041;
+  width: 200px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 1s;
+}
+.plan .plan_body .plans .plans_item:hover .plans_header > h2{
+  background-color: #E50914;
+  transition: 1s;
+  
+}
+.plan .plan_body .plans .plans_item .plans_header > h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  margin: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 7px;
+  background-color: #EF6B72;
+  transition: 1s;
+}
+.plan .plan_body .plans .plan_selected{
+  transform: scale(1.05);
+  transition: 1s;
+}
+.plan .plan_body .plans .plan_selected .plans_header > h2{
+  background-color: #E50914;
+  transition: 1s;
+}
+.plan .plan_body .plans .plans_item .plans_details > h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #EF6B72;
+  background-color:#fff;
+  padding: 10px 1px;
+  margin: 0;
+  border-bottom: 1px solid gray;
+  border-bottom-width: 1px;
+}
+.plan .plan_body .plans .plans_item .plans_details > h5 {
+  background-color: #fff;
+  color: #E50914;
+  padding: 20px 0;
+  margin: 0;
+  font-weight: 700;
+  border-bottom: 1px solid gray;
+}
+.plan .plan_body .plans .plans_item .plans_details .device_icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px  0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.plan .plan_body .plans .plans_item .plans_details .devices {
+  display: flex;
+  flex-direction: column;
+}
+.plan .plan_body .plans .plans_item .plans_details .devices_icon {
+  width: 30px;
+  fill: #FA888E;
+}
+.plan .plan_body .plans .plans_item .plans_details .devices>span {
+ font-size: 10px;
+ text-align: center;
+  }
+  .plan .container .plan_body .conform_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .plan .container .plan_body .conform_btn .continue_btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #e50914;
+    padding: 10px 10px;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 35%);
+  }
+  
+  .plan .container .plan_body .conform_btn .continue_btn:hover{
+    background-color:#F6121D;
+  }
+  .plan .container .plan_body .conform_btn .loading_btn {
+    padding: 11px 20px;
+    border-radius: 5px;
+    background-color: #FA888E;
+    border: none;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  .plan .container .plan_body .conform_btn .loading_btn .loading_animation {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    animation: loading 1s infinite linear;
+  }
+  @keyframes loading {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

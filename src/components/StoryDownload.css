@@ -1,0 +1,92 @@
+ .story_download{
+    background-color: #000;
+    background-size: cover;
+    color: #fff;
+    padding: 80px 60px;
+  }
+  .story_download .story_download_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .story_download .story_download_section .story_download_text{
+      z-index: 10;
+  }
+   .story_download .story_download_section .story_download_text > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+   .story_download .story_download_section .story_download_text > h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 30px;
+  }
+   .story_download .story_download_section .story_download_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .story_download .story_download_section .story_download_img > img {
+    position: relative;
+    width: 500px;
+    z-index: 2;
+    object-fit: contain;
+  }
+  .story_download .story_download_section .story_download_animation {
+      position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 340px;
+    background-color: #000000;
+    padding: 10px 10px;
+    border-radius: 0.75em;
+    border: 2px solid #404040;
+    margin-top: 210px;
+    z-index: 10;
+  }
+   .story_download .story_download_section .story_download_animation > img {
+    height: 3em;
+  }
+  .story_download .story_download_section .story_download_animation_text > h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  .story_download .story_download_section .story_download_animation_text > p {
+    font-size: 12px;
+    margin:0;
+    color: #0071eb;
+  }
+  
+  
+  @media (max-width: 768px) {
+     .story_download .story_download_section .story_download_text > h1{
+      font-size: 2rem;
+    }
+     .story_download .story_download_section .story_download_text > h4{
+      font-size: .8rem;
+    }
+  }
+  @media (max-width: 600px){
+     .story_download .story_download_section .story_download_img > img {
+      width: 400px;
+    }
+  }
+  @media (max-width: 450px){
+     .story_download .story_download_section .story_download_img > img {
+      width: 300px;
+    }
+    .story_download .story_download_section .story_download_animation {
+      width: 300px;
+      margin-top: 170px;
+    }
+  }
+  @media (max-width: 992px) {
+    .story_download .story_download_section .story_download_text {
+     text-align: center;
+    }
+  }

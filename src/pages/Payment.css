@@ -1,0 +1,109 @@
+.payment .payment_body {
+  width: 100%;
+  margin: 70px 0px;
+}
+.payment .payment_body .payment_contents .steps {
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+.payment .payment_body .payment_contents .steps > span {
+  font-weight: 600;
+  margin: 0 2px;
+}
+.payment .payment_body .payment_contents .heading {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.payment_details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+.payment_details .lock_img {
+  width: 60px;
+}
+.plan_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.plan_details .plan_price > h5 {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+.plan_details .plan_price > h6 {
+  font-size: 14px;
+  color: #737373;
+  font-weight: 400;
+}
+.plan_details .change_btn > h4 {
+  font-size: 14px;
+  color: #0071eb;
+  font-weight: 700;
+  cursor: pointer;
+}
+.plan_details .change_btn > h4:hover{
+    text-decoration: underline;
+}
+.membership {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.membership .loading_btn {
+  padding: 11px 20px;
+  border-radius: 5px;
+  background-color: #F6121D;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.membership  .loading_btn .loading_animation {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  animation: loading 1s infinite linear;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.membership .membership_add {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e50914;
+  padding: 12px 20px;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 400px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 35%);
+}
+.membership .membership_add:hover {
+  background-color: #f6121d;
+}
+
+/* Helvetica Neue", Helvetica, Arial, sans-serif; */

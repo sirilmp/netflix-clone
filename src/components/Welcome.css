@@ -1,0 +1,119 @@
+.welcome .welcome_background .welcome_gradient .nav_bar .logo_img {
+  position: absolute;
+  left: 0;
+  width: 130px;
+  object-fit: contain;
+  padding-left: 10px;
+}
+.welcome .welcome_background .welcome_gradient .nav_bar .sign_in_btn {
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e50914;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.welcome .welcome_background .welcome_gradient .nav_bar .sign_in_btn:hover{
+  background-color:#F6121D;
+}
+.welcome .welcome_background {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/8dc3f88b-a96a-4d8a-af9a-a69e6f3b2506/b2552a55-8439-4e7a-9cef-d42b787491b8/IN-en-20210524-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  background-size: cover;
+}
+.welcome .welcome_background .welcome_gradient {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.welcome .welcome_background .welcome_gradient .welcome_text {
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  padding-top: 150px;
+}
+.welcome .welcome_background .welcome_gradient .welcome_text > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.welcome .welcome_background .welcome_gradient .welcome_text > h5 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.welcome .welcome_background .welcome_gradient .welcome_text > h6 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.welcome .welcome_background .welcome_gradient .input_field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.welcome .welcome_background .welcome_gradient .input_field .email_input {
+  height: 54px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  outline: none;
+  width: 40%;
+  max-width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.welcome .welcome_background .welcome_gradient .input_field .get_started {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e50914;
+  padding: 16px 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.welcome .welcome_background .welcome_gradient .input_field .get_started:hover{
+  background-color:#F6121D;
+}
+.welcome .welcome_background .welcome_gradient .input_field .select_plan_btn{
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #e50914;
+  padding: 16px 10px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  max-width: 200px;
+}
+.welcome .welcome_background .welcome_gradient .input_field .select_plan_btn:hover{
+  background-color:#F6121D;
+}
+.welcome .welcome_background .welcome_gradient .wanning_border{
+ background-color: 1px solid #E87C03;
+}
+.welcome .welcome_background .welcome_gradient .wanning_text{
+  color: #E87C03;
+  text-align: center;
+}
