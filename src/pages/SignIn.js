@@ -1,8 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
 import db, { auth } from '../constants/Firebase';
-import { selectUser } from '../features/userSlice';
 import './SignIn.css'
 
 function SignIn() {
@@ -15,9 +13,8 @@ function SignIn() {
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
     const history = useHistory()
-    const user = useSelector(selectUser);
 
-
+    let plan = 0
 
 
 
@@ -36,17 +33,6 @@ function SignIn() {
 
 
     const register = (e) => {
-        // auth
-        //     .createUserWithEmailAndPassword(
-        //         emailRef.current.value,
-        //         passwordRef.current.value
-        //     )
-        //     .then((authUser) => {
-        //         console.log(authUser);
-        //     })
-        //     .catch((error) => {
-        //         alert(error.message);
-        //     });
         history.push('/')
     };
 
@@ -96,27 +82,33 @@ function SignIn() {
         auth
             .signInWithEmailAndPassword(
                 emailRef.current.value,
-                passwordRef.current.value
+                passwordRef.current.value,
             )
             .then((authUser) => {
 
-                setLoading(true)
-
-                userPlanDetails.map((planData) => {
-                    if (user.uid===planData.uid) {
-                        console.log('true');
-                        console.log(planData.uid,user.uid);
-                        history.push('/')
-                    }
-                    else {
-                        console.log("false");
-                        console.log(planData.uid,user.uid);
-                        history.push('/plan')
-                    }
-                })
-
-                
                 setLoading(false)
+                // history.push('/')
+            //console.log('haiiiiiiiiiiiiiii');
+                // console.log(authUser.user.uid);
+                if(authUser){
+                    userPlanDetails.map((userData) => {
+                        //  console.log(userData.uid,"userData.uid");
+                        //  console.log(authUser.user.uid,'auter.uid');
+                        if (authUser.user.uid === userData.uid){
+                            // console.log('true');
+                            plan=1
+                        }// console.log('false');
+                        
+                    })
+                }
+                if(plan===0){
+                    history.push('/plan')
+                    alert('No plan is active in your account. After selecting the plan, proceed')
+                }
+                else if(plan===1){
+                    history.push('/')
+                }
+                localStorage.setItem('plan_checker',plan)
             })
 
             .catch((error) => {
@@ -124,6 +116,9 @@ function SignIn() {
                 alert(error)
             });
 
+      
+
+        // console.log(userPlanDetails);
 
     };
 

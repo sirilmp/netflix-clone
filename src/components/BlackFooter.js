@@ -1,32 +1,32 @@
 import React from "react";
-import "./GrayFooter.css";
+import "./BlackFooter.css";
 
-function GrayFooter() {
+function BlackFooter() {
   return (
-    <div className="gray_footer">
+    <div className="black_footer">
       <h2 className="q_number">
         Questions? Call <span>000-800-040-1843</span>
       </h2>
       <div className="container">
-        <div className="row gray_footer_items">
+        <div className="row black_footer_items">
           <div className="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 ">
-            <p className="gray_footer_item">FAQ</p>
+            <p className="black_footer_item">FAQ</p>
           </div>
           <div className="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 ">
-            <p className="gray_footer_item">Help Centre</p>
+            <p className="black_footer_item">Help Centre</p>
           </div>
           <div className="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 ">
-            <p className="gray_footer_item">Terms of Use</p>
+            <p className="black_footer_item">Terms of Use</p>
           </div>
 
           <div className="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 ">
-            <p className="gray_footer_item">Privacy</p>
+            <p className="black_footer_item">Privacy</p>
           </div>
           <div className="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 ">
-            <p className="gray_footer_item">Cookie Preferences</p>
+            <p className="black_footer_item">Cookie Preferences</p>
           </div>
           <div className="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 ">
-            <p className="gray_footer_item">Corporate Information</p>
+            <p className="black_footer_item">Corporate Information</p>
           </div>
         </div>
         <div class="dropdown">
@@ -49,4 +49,4 @@ function GrayFooter() {
   );
 }
 
-export default GrayFooter;
+export default BlackFooter;

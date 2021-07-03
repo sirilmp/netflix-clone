@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background-color: blue; */
 }
 .story_enjoy .story_enjoy_section .story_enjoy_play > img {
   position: relative;
@@ -36,6 +37,7 @@
   width: 291px;
   margin-top: -6px;
   margin-left: -2px;
+  
 }
 
 @media (max-width: 768px) {
@@ -51,16 +53,16 @@
   .story_enjoy .story_enjoy_section .story_enjoy_play > img {
     width: 400px;
   }
-  .story_enjoy .story_enjoy_section .story_enjoy_play > video {
-    position: absolute;
-    width: 251px;
-    margin-top: -3px;
-    margin-left: 12px;
-  }
 }
 @media (max-width: 450px) {
   .story_enjoy .story_enjoy_section .story_enjoy_play > img {
     width: 300px;
+  }
+  .story_enjoy .story_enjoy_section .story_enjoy_play > video {
+    width: 218px;
+    margin-top: -5px;
+    margin-left: px;
+    
   }
 }
 @media (max-width: 992px) {

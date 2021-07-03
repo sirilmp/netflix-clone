@@ -19,6 +19,7 @@ function Welcome({ user }) {
   const sign_out_btn = () => {
     auth.signOut()
     history.push('/')
+    localStorage.clear()
   }
 
   const emailChecking = () => {
@@ -85,7 +86,7 @@ function Welcome({ user }) {
               <>
                 <input className="email_input" type="email" placeholder='Email address' ref={emailRef} onChange={emailChecking} />
 
-                <button type='submit' className="get_started" onClick={getStart} >Get Started <img src='./images/right_arrow.svg' /></button>
+                <button type='submit' className="get_started" onClick={getStart} >Get Started <img src='./images/right_arrow.svg' alt='loading_img' /></button>
               </>
               : <button className="select_plan_btn" onClick={selectPlan}>Select a Plan</button>
             }

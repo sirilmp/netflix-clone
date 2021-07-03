@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import GrayFooter from "../components/GrayFooter";
 import WhiteNavBar from "../components/WhiteNavBar";
 import db from "../constants/Firebase";
-import { user_selected_plan } from "../features/planSlice";
 import { selectUser } from "../features/userSlice";
 import "./Payment.css";
 
@@ -67,10 +66,12 @@ function Payment() {
       Email: user.email,
       Plan: plan,
       Date_of_Ex: Ex_date,
+      Name:user.email
     });
     alert('Plan added successfully')
     setLoading(false)
     history.push('/')
+    localStorage.setItem('plan_checker',"1")
   };
 
   return (

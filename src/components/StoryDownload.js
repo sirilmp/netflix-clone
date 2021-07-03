@@ -13,7 +13,7 @@ function StoryDownload() {
         </div>
         <div className="col-lg-6 col-md-12 col-sm-12 story_download_img">
           <img
-            alt="story image"
+            alt="story_image"
             src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
           />
 
@@ -28,6 +28,7 @@ function StoryDownload() {
             </div>
             <img
               className="story_download_gif"
+              alt="story_image"
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
             />
           </div>

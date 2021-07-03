@@ -22,6 +22,7 @@ function WhiteNavBar() {
     const signOut=()=>{
         auth.signOut()
         history.push('/')
+        localStorage.clear()
     }
     return (
         <div className='white_nav_bar'>

@@ -13,7 +13,8 @@
   justify-content: space-between;
 }
 .main_nav_bar .nav_bar_black {
-  background-color: #000;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: saturate(180%) blur(10px);
 }
 .main_nav_bar .nav_bar_logo {
   position: fixed;
@@ -30,4 +31,22 @@
   height: 32px;
   right: 20px;
   cursor: pointer;
+}
+.sign_out_home {
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: saturate(180%) blur(10px);
+  width: fit-content;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  
+}
+.sign_out_home > h3 {
+  font-size: 17px;
+  padding: 8px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  border-radius: 5px;
 }

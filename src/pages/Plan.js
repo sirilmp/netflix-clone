@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import WhiteNavBar from "../components/WhiteNavBar";
 import GrayFooter from "../components/GrayFooter";
 import "./Plan.css";
@@ -9,21 +9,6 @@ function Plan() {
   const [plan, setPlan] = useState("Basic");
   const [loading, setLoading] = useState(false);
   const history = useHistory();
-
-  // useEffect(() => {
-  // db.collection('plan').onSnapshot(snapshot=>(
-  //   setUserPlanDetails(snapshot.docs.map(doc=>(
-  //     {
-  //       id:doc.id,
-  //       data:doc.data()
-  //     }
-  //   )))
-  // ))
-  // }, [])
-
-  // console.log(user.uid);
-
-  // console.log(Ex_date);
 
   const mobilePlan = () => {
     setPlan("Mobile");
@@ -66,7 +51,7 @@ function Plan() {
           <div className="plans">
             <div className="plans_items">
               <div className="row mx-auto">
-                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-6">
+                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-12">
                   <div
                     className={`plans_item ${
                       plan === "Mobile" && "plan_selected"
@@ -110,7 +95,7 @@ function Plan() {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-6">
+                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-12">
                   <div
                     className={`plans_item ${
                       plan === "Basic" && "plan_selected"
@@ -174,7 +159,7 @@ function Plan() {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-6">
+                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-12">
                   <div
                     className={`plans_item ${
                       plan === "Standard" && "plan_selected"
@@ -238,7 +223,7 @@ function Plan() {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-6">
+                <div className="col-lg-3 col-xl-3 col-md-4 col-sm-6 col-12">
                   <div
                     className={`plans_item ${
                       plan === "Premium" && "plan_selected"
